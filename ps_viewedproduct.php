@@ -65,7 +65,7 @@ class Ps_Viewedproduct extends Module implements WidgetInterface
         return parent::install()
             && Configuration::updateValue('PRODUCTS_VIEWED_NBR', 8)
             && $this->registerHook('displayFooterProduct')
-            && $this->registerHook('displayProductButtons')
+            && $this->registerHook('displayProductAdditionalInfo')
             && $this->registerHook('actionObjectProductDeleteAfter')
             && $this->registerHook('actionObjectProductUpdateAfter')
         ;
